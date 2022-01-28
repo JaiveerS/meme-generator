@@ -3,13 +3,14 @@ import memesData from "../memesData";
 
 
 function Meme(){
-    function HandleClick(){
-        const size = memesData.data.memes.length;
-        const index = Math.round(Math.random() *size)
+    let url
+
+    function getMemeImage(){
         const data = memesData.data.memes
-        return (
-            console.log(data[index].url)
-        )
+        const size = data.length;
+        const randomNumber = Math.round(Math.random() *size)
+        url = data[randomNumber].url
+        console.log(url)
     }
 
     return(
@@ -18,7 +19,8 @@ function Meme(){
                     <input className="form--input" type="text" placeholder="Top text"/>
                     <input className="form--input" type="text" placeholder="Bottom text" />
                     {/* add a onclick for the submit button */}
-                    <button className="form--submit" onClick={HandleClick}>Get a new meme image 🖼</button> 
+                    <button className="form--submit" onClick={getMemeImage}>Get a new meme image 🖼</button>
+                    <p>{url}</p>
             </div>
         </main>
     )
