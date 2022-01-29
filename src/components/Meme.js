@@ -10,7 +10,7 @@ function Meme(){
     function getMemeImage(){
         const randomNumber = Math.round(Math.random() *size)
         setUrl(data[randomNumber].url)
-        console.log(url)
+        // console.log(url)
     }
 
     return(
@@ -18,7 +18,6 @@ function Meme(){
             <div className="form">
                     <input className="form--input" type="text" placeholder="Top text"/>
                     <input className="form--input" type="text" placeholder="Bottom text" />
-                    {/* add a onclick for the submit button */}
                     <button className="form--submit" onClick={getMemeImage}>Get a new meme image 🖼</button>
                     <img src={url} className="form--image" alt=""></img>
             </div>
