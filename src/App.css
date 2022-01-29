@@ -59,3 +59,7 @@ main{
 .form--submit:hover{
   filter:brightness(90%);
 }
+
+.form--image{
+  max-width: 100%;
+}
