@@ -9,10 +9,8 @@ function Meme(){
         randomImage: "http://i.imgflip.com/1bij.jpg"
     })
     
-    const [allMemeImages, setAllMemeImages] = React.useState(memesData)
-
     function getMemeImage(){
-        const memesArray = allMemeImages.data.memes
+        const memesArray = memesData.data.memes
         const randomNumber = Math.round(Math.random() * memesArray.length)
         const url = memesArray[randomNumber].url
         setContent( prevState => ({
