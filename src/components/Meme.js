@@ -3,13 +3,13 @@ import memesData from "../memesData";
 
 
 function Meme(){
-    let url
+    const [url, setUrl] = React.useState()
     
     const data = memesData.data.memes
     const size = data.length;
     function getMemeImage(){
         const randomNumber = Math.round(Math.random() *size)
-        const url = data[randomNumber].url
+        setUrl(data[randomNumber].url)
         console.log(url)
     }
 
@@ -21,7 +21,6 @@ function Meme(){
                     {/* add a onclick for the submit button */}
                     <button className="form--submit" onClick={getMemeImage}>Get a new meme image 🖼</button>
                     <img src={url} className="form--image" alt=""></img>
-                    <p>{url}</p>
             </div>
         </main>
     )
