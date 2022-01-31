@@ -6,7 +6,6 @@ export default function Navbar(){
         <div className="nav">
             <img className="nav--icon" src={Troll} alt="troll" ></img>
             <h2 className="nav--title">Meme Generator</h2>
-            <h4 className="nav--extra"> Course project</h4>
         </div>
     )
 }

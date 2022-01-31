@@ -6,36 +6,33 @@
 .nav{
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 65px;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
   color: white;
-  padding: 20px;
 }
 
 .nav--icon{
-  height: 100%;
+  height: 80%;
   margin-right: 6px;
-}
-
-.nav--title{
-  font-size: 1.25rem;
-  margin-right: auto;
 }
 
 .nav--extra{
   font-size: .75rem;
   font-weight: 500;
+  margin-right: 10px;
 }
 
 main{
-  margin: 0;
-  padding: 36px;
-  max-width: 100%;
+  max-width: 90%;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
 .form{
-  margin: 0;
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
@@ -43,7 +40,6 @@ main{
 }
 
 .form--input{
-  margin: 0;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
@@ -52,7 +48,6 @@ main{
 
 
 .form--submit{
-  margin: 0;
   font-family: "Karla", sans-serif;
   grid-column: 1 / -1;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
@@ -64,12 +59,10 @@ main{
 }
 
 .form--submit:hover{
-  margin: 0;
   filter:brightness(90%);
 }
 
 .form--image{
-  margin: 0;
   max-width: 100%;
   display: block;
   margin-left: auto;
