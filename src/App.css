@@ -21,11 +21,10 @@
 .nav--extra{
   font-size: .75rem;
   font-weight: 500;
-  margin-right: 10px;
 }
 
 main{
-  max-width: 90%;
+  max-width: 80%;
   margin-top: 20px;
   display: block;
   margin-left: auto;
