@@ -38,9 +38,11 @@ main{
   display: grid;
   grid-template: 40px 40px / 1fr 1fr;
   gap: 17px;
+
 }
 
 .form--input{
+  margin: 0;
   font-family: "Karla", sans-serif;
   border-radius: 5px;
   border: 1px solid #D5D4D8;
@@ -49,6 +51,7 @@ main{
 
 
 .form--submit{
+  margin: 0;
   font-family: "Karla", sans-serif;
   grid-column: 1 / -1;
   background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
@@ -60,10 +63,12 @@ main{
 }
 
 .form--submit:hover{
+  margin: 0;
   filter:brightness(90%);
 }
 
 .form--image{
+  margin: 0;
   max-width: 100%;
   display: block;
   margin-left: auto;
